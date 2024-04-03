@@ -64,3 +64,21 @@ ORDER BY CAST(quiz_points AS CHAR);
 
 SELECT first_name AS firstname, UPPER(last_name) AS surname
 FROM people;
+
+INSERT INTO people
+(first_name, last_name, state_code, city, shirt_or_hat)
+VALUES
+('Mary', 'Hamilton', 'OR', 'Portland', 'hat');
+
+UPDATE people
+SET last_name='Morrison'
+WHERE id_number=175;
+
+SELECT * 
+FROM people
+WHERE id_number=1001;
+
+DELETE
+FROM people
+WHERE id_number=1001;
+
